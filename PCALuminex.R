@@ -5,7 +5,7 @@ library("tidyverse")
 library("tibble")
 
 # Set Working Directory (change each experiment)
-setwd("C:\\Users\\Richard\\Documents\\R\\Research 2018\\November 2018")
+setwd("PCA November 2018 TCM All/")
 
 # Check Working Directory
 getwd()
@@ -32,7 +32,7 @@ mt_groups <- c(rep("WT", 6), rep("KRAS", 2), rep("STK11", 4), rep("KRAS/STK11", 
 
 # Make A Plot
 ggbiplot(luminextotal.pca, ellipse = F, obs.scale = 1, var.scale = 1, choices = c(1,2), 
-         var.axes = F, labels = rownames(luminextotal), groups = mt_groups, labels.size = 1.75) + ggtitle("Luminex TCM PCA")
+         var.axes = T, varname.size = 1.25, labels = rownames(luminextotal), groups = mt_groups, labels.size = 1.75) + ggtitle("Luminex TCM PCA")
          
 # Export The Plot
 ggsave('Luminex TCM PCA.pdf', last_plot())
