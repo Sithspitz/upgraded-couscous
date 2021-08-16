@@ -1,5 +1,8 @@
 # Install Packages
-library("utils", "ggbiplot", "tidyverse", "tibble")
+library("utils")
+library("ggbiplot")
+library("tidyverse")
+library("tibble")
 
 # Set Working Directory (change each experiment)
 setwd("C:\\Users\\Richard\\Documents\\R\\Research 2018\\November 2018")
